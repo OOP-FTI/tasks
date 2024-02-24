@@ -2,8 +2,9 @@
 
 Познакомьтесь с раздельной компиляцией и пространством имен в C++. В качестве примера используйте следующую программу:
 
-```
+
 File module1.h:
+```c++
 #include <string>
 
 namespace Module1
@@ -12,8 +13,8 @@ namespace Module1
 }
 ```
 
-```
 File module1.cpp
+```c++
 #include "module1.h"
 
 namespace Module1
@@ -26,8 +27,10 @@ namespace Module1
 }
 
 ```
-```
+
+
 File module2.h:
+```c++
 #include <string>
 
 namespace Module2
@@ -35,8 +38,10 @@ namespace Module2
 	std::string getMyName();
 }
 ```
-```
+
+
 File module2.cpp
+```c++
 #include "module2.h"
 
 namespace Module2
@@ -48,8 +53,10 @@ namespace Module2
 	}
 }
 ```
-```
+
+
 File main.cpp:
+```c++
 #include "module1.h"
 #include "module2.h"
 #include <iostream>

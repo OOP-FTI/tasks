@@ -405,7 +405,6 @@ public:
 
 ```c++
 //Image.hpp
-#include "Range.h"
 
 enum class MirrorType {
   Vertical,
